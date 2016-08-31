@@ -1,5 +1,7 @@
 $time-transition    : 0.3s;
 $largura            : 1200px;
+$colorBlue			: #5cf6ed;
+$colorBlueHover		: #39cdc4;
 
 // Placeholder
 %transition {
@@ -18,7 +20,7 @@ $largura            : 1200px;
 @import 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900';
 
 /* RESET */
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0; outline: none; }
 html { font-size: 62.5%; }
 body { font-family: 'Lato', sans-serif; font-size: 1.6em; font-weight: 200; color: #000; }
 ::-moz-selection { background: #b3d4fc; text-shadow: none; }
@@ -51,7 +53,12 @@ summary {
 	display: block;
 }
 
-[class^="icon-"], [class*="icon-"] {background-image: url(../img/sprite.png);}
+//icones
+[class^="icon-"], [class*="icon-"] {background-image: url(../img/sprite.png); display: block;}
+.icon-filtrar { background-position: -124px -1px; width: 24px; height: 24px; }
+.icon-like { background-position: -121px -1px; width: 24px; height: 24px; }
+.icon-menu { background-position: -121px -1px; width: 24px; height: 24px; }
+
 
 header {
 	width: 100%;
@@ -72,11 +79,11 @@ header {
 	.btn-entrar{
 		float: right;
 		padding: 10px 20px;
-		background-color: #5cf6ed;
+		background-color: $colorBlue;
 		font-weight: 500;
 
 		&:hover{
-			background-color: #1fded3;
+			background-color: $colorBlueHover;
 		}
 	}
 
@@ -95,6 +102,10 @@ header {
 					padding: 10px 0px;
 					color: #fff;
 					display: block;
+
+					&:hover{
+						color: #ccc;
+					}
 				}
 			}
 		}
@@ -185,7 +196,7 @@ main.home{
 
 main.passo2{
 	width: 100%;
-	min-height: calc(100vh - 95px);
+	min-height: calc(100vh - 93px);
 	background: url(../img/bg-passo2.jpg) no-repeat;
 	background-color: #d1d1d1;
 	background-position: top right;
@@ -202,7 +213,7 @@ main.passo2{
 		margin: auto;
 		text-align: center;
 
-		span{
+		span.titulo{
 			width: 100%;
 			font-size: 23px;
 			font-weight: 100;
@@ -215,9 +226,43 @@ main.passo2{
 			margin-top: 20px;
 			margin-bottom: 30px;
 		}
+
+		.range{
+			width: 100%;
+			margin-top: -18px;
+		}
+
+		.btnSeguir{
+			width: 60px;
+			height: 60px;
+			background: url(../img/sprite.png);
+			background-position: -47px 0;
+			background-color: $colorBlue;
+			margin: 0 auto;
+			border: 0px;
+			margin-top: 40px;
+			@include border-radius(60px);
+			cursor: pointer;
+
+			&:hover{
+				background-color: $colorBlueHover;
+			}
+		}
+
+		.linkVoltar{
+			width: 100%;
+			display: inline-block;
+			text-align: center;
+			margin-top: 20px;
+			font-size: 16px;
+			color: #848282;
+
+			&:hover{
+				color: #000;
+			}
+		}
 	}
 }
-
 
 .value {
 	position: absolute;
@@ -227,9 +272,9 @@ main.passo2{
 	width: 40px;
 	text-align: center;
 	display: block;
-	
+
 	/* optional */
-	
+
 	font-weight: normal;
 	font-family: Verdana,Arial,sans-serif;
 	font-size: 14px;
@@ -250,6 +295,30 @@ main.passo2{
 	font-style: normal;
 }
 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	background: $colorBlue !important;
+	border: 0px !important;
+	@include border-radius(50px);
+	cursor: pointer !important;
+}
+
+.ui-widget-content{
+	background: #999999 !important;
+	border: 0px !important;
+}
+
+.ui-slider-horizontal{
+	height: 5px !important;
+}
+
+.ui-widget-header{
+	background: $colorBlue !important;
+}
+
+.ui-slider-horizontal .ui-slider-handle{
+	top: -8px !important;
+}
+
 footer{
 	width: 100%;
 	background-color: #000;
@@ -258,6 +327,67 @@ footer{
 	font-size: 14px;
 }
 
+main.listagem{
+	width: 100%;
+	display: inline-block;
+
+	.barraTop{
+		width: 100%;
+		display: inline-block;
+		border-bottom: 1px solid #eeeeee;
+		padding: 10px 0px;
+
+		.sessoes{
+			float: left;
+			display: inline-block;
+
+			&:before{
+				content: '_';
+				float: left;
+				font-size: 46px;
+				display: inline-block;
+				margin-top: -30px;
+				font-weight: 100;
+			}
+
+			li{
+				float: left;
+				display: inline-block;
+				margin: 5px 10px;
+				font-size: 20px;
+				font-style: italic;
+				font-weight: 400;
+
+				a{
+					color: #cccccc;
+
+					&:hover{
+						color: #222;
+					}
+				}
+			}
+
+			.active{
+				a{
+					color: $colorBlueHover;
+
+					&:hover{
+						color: $colorBlueHover;						
+					}
+				}	
+			}
+		}
+
+		.right{
+			float: right;
+
+			li{
+				float: left;
+				display: inline-block;
+			}
+		}
+	}
+}
 
 //Responsive
 @media only screen and (max-width: 1200px){

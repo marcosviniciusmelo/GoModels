@@ -3,13 +3,15 @@
 	<main class="passo2">
 
 		<div class="containerCenter">
-			<span>QUAL O MANEQUIM?</span>
+			<span class="titulo">QUAL O MANEQUIM?</span>
 			<div class="icon-manequim"></div>
-			<div class="range">
-				<div id="slider"></div>
-			</div>
-			<div class="btn"></div>
-			<a href="">VOLTAR</a>
+			<form action="listagem.php">
+				<div class="range">
+					<div id="slider"></div>
+				</div>
+				<button class="btnSeguir" type="submit"></button>	
+			</form>
+			<a href="./" class="linkVoltar">VOLTAR</a>
 		</div>
 			
 	</main>
