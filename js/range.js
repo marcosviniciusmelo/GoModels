@@ -12,11 +12,16 @@ function collision($div1, $div2) {
     }
     
 // // slider call
+var minI = 34;
 var maxI = 46;
 
-$('#slider').slider({
+//atualiza o input hidden
+$('.range input[name="min"]').val( 36 );
+$('.range input[name="max"]').val( 42 );
+
+$('#rangeManequim').slider({
 	range: true,
-	min: 34,
+	min: minI,
 	max: maxI,
 	values: [ 36, 42 ],
 	slide: function(event, ui) {
@@ -28,6 +33,10 @@ $('#slider').slider({
 			$('.ui-slider-handle:eq(1) .price-range-max').html(ui.values[ 1 ]);
 		}
 		$('.price-range-both').html('<i>' + ui.values[ 0 ] + ' - </i>' + ui.values[ 1 ] );
+
+		//atualiza o input hidden
+		$('.range input[name="min"]').val( ui.values[ 0 ] );
+		$('.range input[name="max"]').val( ui.values[ 1 ] );
 				
     if ( ui.values[0] == ui.values[1] ) {
       $('.price-range-both i').css('display', 'none');
@@ -46,8 +55,11 @@ $('#slider').slider({
 	}
 });
 
-$('.ui-slider-range').append('<span class="price-range-both value"><i>' + $('#slider').slider('values', 0 ) + ' - </i>' + $('#slider').slider('values', 1 ) + '</span>');
+$('.ui-slider-range').append('<span class="price-range-both value"><i>' + $('#rangeManequim').slider('values', 0 ) + ' - </i>' + $('#rangeManequim').slider('values', 1 ) + '</span>');
 
-$('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + $('#slider').slider('values', 0 ) + '</span>');
+$('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + $('#rangeManequim').slider('values', 0 ) + '</span>');
 
-$('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('#slider').slider('values', 1 ) + '</span>');
+$('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('#rangeManequim').slider('values', 1 ) + '</span>');
+
+
+

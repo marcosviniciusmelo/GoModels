@@ -7,7 +7,9 @@
 			<div class="icon-manequim"></div>
 			<form action="listagem.php">
 				<div class="range">
-					<div id="slider"></div>
+					<div id="rangeManequim"></div>
+					<input type="hidden" value="" name="min">
+					<input type="hidden" value="" name="max">
 				</div>
 				<button class="btnSeguir" type="submit"></button>	
 			</form>

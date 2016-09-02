@@ -56,8 +56,11 @@ summary {
 //icones
 [class^="icon-"], [class*="icon-"] {background-image: url(../img/sprite.png); display: block;}
 .icon-filtrar { background-position: -124px -1px; width: 24px; height: 24px; }
-.icon-like { background-position: -121px -1px; width: 24px; height: 24px; }
-.icon-menu { background-position: -121px -1px; width: 24px; height: 24px; }
+.icon-like { background-position: -124px -33px; width: 24px; height: 24px; }
+.icon-liked { background-position: -159px -33px; width: 24px; height: 24px; }
+.icon-menu { background-position: -195px -1px; width: 24px; height: 24px; }
+.icon-close { background-position: -232px -4px; width: 40px; height: 40px; }
+.icon-plus { background-position: -197px -35px; width: 24px; height: 24px; }
 
 
 header {
@@ -384,6 +387,149 @@ main.listagem{
 			li{
 				float: left;
 				display: inline-block;
+				margin: 4px 10px;
+				cursor: pointer;
+
+				&:hover{
+					opacity: 0.7;
+				}
+
+				i{
+					float: left;
+					margin-right: 3px;
+				}
+
+				span{
+					float: left;
+					margin-top: 2px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.containerListagem{
+		width: 100%;
+		min-height: calc(100vh - 150px);
+
+		.encontrados{
+			width: 100%;
+			font-size: 32px;
+			font-weight: 100;
+			margin-top: 5px;
+		}
+
+		.listaModelos{
+			width: calc(100% + 0px);
+			display: inline-block;
+
+			li.itemModelo{
+				width: 25%;
+				float: left;
+				display: inline-block;
+				padding: 32px;
+				box-sizing: border-box;
+
+				figure{
+					width: 100%;
+					margin: 0px;
+
+					img{
+						width: 100%;
+						display: block;
+					}
+				}
+
+				.bottom{
+					width: 100%;
+					display: inline-block;
+					margin-top: 10px;
+
+					.iconLike{
+						float: left;
+						cursor: pointer;
+					}
+
+					.name{
+						float: right;
+						font-size: 16px;
+						font-weight: 700;
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+//barra filtro
+.barraFiltro{
+	width: 390px;
+	background-color: #fff;
+	position: absolute;
+	top: 60px;
+	right: 0px;
+	z-index: 99;
+
+	.btnClose{
+		position: absolute;
+		top: 20px;
+		left: -20px;
+		cursor: pointer;
+
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+
+	.containBarra{
+		width: 100%;
+		height: 100vh;
+		overflow: auto;
+		padding: 10px;
+		box-sizing: border-box;
+
+		.field{
+			width: 100%;
+			padding: 30px 20px;
+			box-sizing: border-box;
+			border-bottom: 1px solid #f5f5f5;
+
+			label{
+				width: 100%;
+				display: inline-block;
+				margin-bottom: 10px;
+			}
+
+			.range{
+				height: 40px;
+				position: relative;
+			}
+
+			.fieldAutocomplete{
+				width: 100%;
+				display: inline-block;
+				border-bottom: 1px solid #000;
+				padding: 5px;
+				box-sizing: border-box;
+
+				input{
+					width: calc(100% - 36px);
+					float: left;
+					border: 0px;
+					background-color: transparent;
+				}
+
+				button{
+					float: right;
+					width: 26px;
+					text-align: center;
+					border: 0px;
+					background-color: transparent;
+					font-size: 20px;
+					font-weight: bold;
+					cursor: pointer;
+				}
 			}
 		}
 	}
