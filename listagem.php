@@ -24,53 +24,53 @@
 				<ul class="listaModelos">
 					<!-- loop models -->
 					<li class="itemModelo">
-						<a href="interna-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
+						<a href="single-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
 						<div class="bottom">
-							<div class="iconLike"><i class="icon-like"></i></div>
-							<a href="interna-modelo.php"><span class="name">Adriane Boff</span></a>
+							<div class="iconLike"><i class="icon-liked"></i></div>
+							<a href="single-modelo.php"><span class="name">Adriane Boff</span></a>
 						</div>
 					</li>
 
 					<li class="itemModelo">
-						<a href="interna-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
+						<a href="single-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
 						<div class="bottom">
 							<div class="iconLike"><i class="icon-like"></i></div>
-							<a href="interna-modelo.php"><span class="name">Adriane Boff</span></a>
+							<a href="single-modelo.php"><span class="name">Adriane Boff</span></a>
 						</div>
 					</li>
 					<li class="itemModelo">
-						<a href="interna-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
+						<a href="single-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
 						<div class="bottom">
 							<div class="iconLike"><i class="icon-like"></i></div>
-							<a href="interna-modelo.php"><span class="name">Adriane Boff</span></a>
+							<a href="single-modelo.php"><span class="name">Adriane Boff</span></a>
 						</div>
 					</li>
 					<li class="itemModelo">
-						<a href="interna-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
+						<a href="single-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
 						<div class="bottom">
 							<div class="iconLike"><i class="icon-like"></i></div>
-							<a href="interna-modelo.php"><span class="name">Adriane Boff</span></a>
+							<a href="single-modelo.php"><span class="name">Adriane Boff</span></a>
 						</div>
 					</li>
 					<li class="itemModelo">
-						<a href="interna-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
+						<a href="single-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
 						<div class="bottom">
 							<div class="iconLike"><i class="icon-like"></i></div>
-							<a href="interna-modelo.php"><span class="name">Adriane Boff</span></a>
+							<a href="single-modelo.php"><span class="name">Adriane Boff</span></a>
 						</div>
 					</li>
 					<li class="itemModelo">
-						<a href="interna-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
+						<a href="single-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
 						<div class="bottom">
 							<div class="iconLike"><i class="icon-like"></i></div>
-							<a href="interna-modelo.php"><span class="name">Adriane Boff</span></a>
+							<a href="single-modelo.php"><span class="name">Adriane Boff</span></a>
 						</div>
 					</li>
 					<li class="itemModelo">
-						<a href="interna-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
+						<a href="single-modelo.php"><figure><img src="img/fotoModelo.jpg" alt=""></figure></a>
 						<div class="bottom">
 							<div class="iconLike"><i class="icon-like"></i></div>
-							<a href="interna-modelo.php"><span class="name">Adriane Boff</span></a>
+							<a href="single-modelo.php"><span class="name">Adriane Boff</span></a>
 						</div>
 					</li>
 					<!-- loop models -->
@@ -86,23 +86,28 @@
 		<div class="btnClose"><i class="icon-close"></i></div>
 
 		<div class="containBarra">
+
+			<div class="scroll-pane">
+			
 			<form action="">
 				
 				<div class="field">
 					<label>Manequim</label>
 					<div class="range">
-						<div id="rangeManequim"></div>
-						<input type="hidden" value="" name="min">
-						<input type="hidden" value="" name="max">
+						<div id="rangeManequim">
+							<input type="hidden" value="" name="min">
+							<input type="hidden" value="" name="max">
+						</div>
 					</div>
 				</div>
 
 				<div class="field">
 					<label>Idade</label>
 					<div class="range">
-						<div id="rangeIdade"></div>
-						<input type="hidden" value="" name="min">
-						<input type="hidden" value="" name="max">
+						<div id="rangeIdade">
+							<input type="hidden" value="" name="min">
+							<input type="hidden" value="" name="max">
+						</div>
 					</div>
 				</div>
 
@@ -114,13 +119,102 @@
 					</div>
 				</div>
 
+				<div class="field">
+					<label>Cabelos</label>
+					<div class="fieldCheckes">
+						<div class="check">
+							<input type="checkbox" name="cabelos">
+							<span>Loiros</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="cabelos">
+							<span>Pretos</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="cabelos">
+							<span>Ruivos</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="cabelos">
+							<span>Castanhos</span>
+						</div>
+					</div>
+				</div>
 
+				<div class="field">
+					<label>Etinia</label>
+					<div class="fieldCheckes">
+						<div class="check">
+							<input type="checkbox" name="etinia">
+							<span>Branca</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="etinia">
+							<span>Negra</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="etinia">
+							<span>Parda</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="etinia">
+							<span>Oriental</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="field">
+					<label>Olhos</label>
+					<div class="fieldCheckes">
+						<div class="check">
+							<input type="checkbox" name="olhos">
+							<span>Azuis</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="olhos">
+							<span>Verdes</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="olhos">
+							<span>Pretos</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="olhos">
+							<span>Castanhos</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="field">
+					<label>Especialidade</label>
+					<div class="fieldCheckes">
+						<div class="check">
+							<input type="checkbox" name="especialidade">
+							<span>Passarela</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="especialidade">
+							<span>Fotos</span>
+						</div>
+						<div class="check">
+							<input type="checkbox" name="especialidade">
+							<span>Eventos</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="fieldBtns">
+					<button class="btnCancelar" type="reset">CANCELAR</button>
+					<button class="btnFiltrar" type="submit">FILTRAR</button>
+				</div>
 
 			</form>
+			</div>
 			
 		</div>
 		
 	</div>
+	<div class="maskBarraFiltro"></div>
 	<!-- barra filtro -->
 
 <?php include('footer.php'); ?>
