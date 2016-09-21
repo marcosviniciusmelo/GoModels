@@ -8,7 +8,6 @@
 				<ul class="right">
 					<li><a href="listagem.php"><i class="icon-grid"></i></a></li>
 					<li class="like"><i class="icon-liked"></i><span class="count">0</span></li>
-					<li class="linkMenu"><i class="icon-menu"></i></li>
 				</ul>
 			</div>
 		</div>
@@ -49,8 +48,15 @@
 							<li>Florinda</li>
 							<li>Ellus</li>
 							<li>Dior</li>
-							<li class="more">...</li>
+							<li>Dior</li>
+							<li>Dior</li>
+							<li>Dior</li>
+							<li>Dior</li>
+							<li>Dior</li>
+							<li>Dior</li>
+							<li>Dior</li>
 						</ul>
+						<span class="moreListTrabalhos">...</span>
 
 					</div>
 
@@ -64,6 +70,11 @@
 						</div>
 
 						<a href="" class="btnContato">ENVIAR EMAIL</a>
+
+						<div class="ultimaAtualizacao">
+							<p>Última atualização</p>
+							<p>15 de julho de 2016</p>
+						</div>
 
 					</div>
 

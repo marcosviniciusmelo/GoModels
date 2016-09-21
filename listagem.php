@@ -13,7 +13,6 @@
 				<ul class="right">
 					<li class="filtrar"><i class="icon-filtrar"></i></li>
 					<li class="like"><i class="icon-liked"></i><span class="count">0</span></li>
-					<li class="linkMenu"><i class="icon-menu"></i></li>
 				</ul>
 			</div>
 		</div>

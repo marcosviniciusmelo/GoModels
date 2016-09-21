@@ -22,7 +22,7 @@
 			<nav>
 				<ul class="menu">
 					<li><a href="">COMO FUNCIONA</a></li>
-					<li><a href="">PREÇOS</a></li>
+					<li><a href="precos.php">PREÇOS</a></li>
 					<li><a href="">CONTATO</a></li>
 				</ul>
 			</nav>
