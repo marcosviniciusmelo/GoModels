@@ -35,7 +35,7 @@
 					</ul>
 
 
-					<div class="formCadastro">
+					<div class="form">
 						<form action="">
 							<div class="field">
 								<label>Nome</label>
