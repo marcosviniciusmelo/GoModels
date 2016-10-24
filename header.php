@@ -17,7 +17,7 @@
 
 	<header>
 		<a href="./"><div class="logo"><img src="img/logo.png" alt=""></div></a>
-		<a href=""><span class="btn-entrar">ENTRAR</span></a>
+		<span class="btn-entrar">ENTRAR</span>
 		<nav>
 			<ul class="menu">
 				<li><a href="">COMO FUNCIONA</a></li>
