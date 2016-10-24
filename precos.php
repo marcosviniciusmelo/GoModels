@@ -36,7 +36,7 @@
 
 
 					<div class="form">
-						<form action="">
+						<form action="precos-passo2.php">
 							<div class="field">
 								<label>Nome</label>
 								<input type="text" name="nome">

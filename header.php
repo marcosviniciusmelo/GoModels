@@ -16,15 +16,13 @@
 <body>
 
 	<header>
-		<div class="main">
-			<a href="./"><div class="logo"><img src="img/logo.png" alt=""></div></a>
-			<a href=""><span class="btn-entrar">ENTRAR</span></a>
-			<nav>
-				<ul class="menu">
-					<li><a href="">COMO FUNCIONA</a></li>
-					<li><a href="precos.php">PREÇOS</a></li>
-					<li><a href="">CONTATO</a></li>
-				</ul>
-			</nav>
-		</div>
+		<a href="./"><div class="logo"><img src="img/logo.png" alt=""></div></a>
+		<a href=""><span class="btn-entrar">ENTRAR</span></a>
+		<nav>
+			<ul class="menu">
+				<li><a href="">COMO FUNCIONA</a></li>
+				<li><a href="precos.php">PREÇOS</a></li>
+				<li><a href="">CONTATO</a></li>
+			</ul>
+		</nav>
 	</header>

@@ -1,10 +1,10 @@
 <?php include('header.php'); ?>
 
-	<main class="precos">
+	<main class="precosPasso2">
 
 		<form action="precos-passo3.php">
 		
-			<div class="collRight">
+			<div class="coll">
 				<div class="container">
 					<div class="ctn">
 						<span class="assinatura">assinatura mensal <b>59,90</b></span>
@@ -26,7 +26,7 @@
 				</div>
 			</div>
 
-			<div class="collRight">
+			<div class="coll">
 
 				<div class="container">
 					<div class="ctn">
@@ -34,19 +34,19 @@
 						<div class="form">
 							<div class="field f-checkbox">
 								<label for="forma">Cartão de Crédito</label>
-								<input type="checkbox" name="forma">
+								<input type="radio" name="forma">
 							</div>
 							<div class="field f-checkbox">
 								<label for="forma">Débito</label>
-								<input type="checkbox" name="forma">
+								<input type="radio" name="forma">
 							</div>
 							<div class="field f-checkbox mr-z">
 								<label for="forma">Boleto</label>
-								<input type="checkbox" name="forma">
+								<input type="radio" name="forma">
 							</div>
 							<div class="field">
 								<label>Nome do proprietário do cartão de crédito</label>
-								<p>como gravado no cartão</p>
+								<p>(como gravado no cartão)</p>
 								<input type="text" name="nome">
 							</div>
 							<div class="field f-md2">
