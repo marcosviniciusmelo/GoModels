@@ -43,6 +43,7 @@ $('.maskModalLogin').click(function(){
 	$('.modalLogin, .maskModalLogin').fadeOut();
 });
 
+
  /* MASK TELEFONE */
 // jQuery("input[name='telefone'], input[name='celular']")
 // .mask("(99) 9999-9999?9")
